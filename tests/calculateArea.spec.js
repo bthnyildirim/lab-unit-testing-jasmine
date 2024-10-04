@@ -24,15 +24,15 @@ describe("Iteration 3 | Calculate Area", () => {
     });
 
     it("should return a number representing the area of a rectangle", () => {
-      expect(divide(10, 2)).toEqual(20);
-      expect(divide(6, 3)).toEqual(18);
-      expect(divide(10, 5)).toEqual(50);
+      expect(calculateArea(10, 2)).toEqual(20);
+      expect(calculateArea(6, 3)).toEqual(18);
+      expect(calculateArea(10, 5)).toEqual(50);
     });
+  });
 
-    it("should return undefined if any of the arguments is not provided", () => {
-      expect(calculateArea(1)).toEqual(undefined);
-      expect(calculateArea()).toEqual(undefined);
-      expect(calculateArea(undefined, 1)).toEqual(undefined);
-    });
+  it("should return undefined if any of the arguments is not provided", () => {
+    expect(calculateArea(1)).toEqual(undefined);
+    expect(calculateArea()).toEqual(undefined);
+    expect(calculateArea(undefined, 1)).toEqual(undefined);
   });
 });

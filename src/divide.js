@@ -1,7 +1,6 @@
 function divide(numOne, numTwo) {
-  if (numOne == undefined || numTwo == undefined) {
+  if (typeof a !== "number" || typeof b !== "number") {
     return undefined;
   }
-
-  return numOne / numTwo;
+  return a / b;
 }
